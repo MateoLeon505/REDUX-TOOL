@@ -23,14 +23,14 @@ export const counterSlice = createSlice(
             state.counter += 1
         },
 
-        decrement: (state) => 
-        {
-            state.counter -= 1
-        },
+        // decrement: (state) => 
+        // {
+        //     state.counter -= 1
+        // },
     },
 })
 
 // Se generan creadores de acciones para cada función reductora de casos
-export const { increment, decrement } = counterSlice.actions
+export const { increment } = counterSlice.actions
 
-//export default counterSlice.reducer
+export default counterSlice.reducer
